@@ -1,0 +1,281 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* index page */
+.auth-page {
+    background: linear-gradient(135deg, #fbfbfb, #d8d8d8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-page .container {
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-page h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.auth-page input[type="text"],
+.auth-page input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.auth-page input:focus {
+    border-color: #82fbff;
+    outline: none;
+}
+
+.auth-page button {
+    width: 48%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0.5rem 1%;
+    transition: background 0.3s ease;
+}
+
+.auth-page button[value="login"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.auth-page button[value="login"]:hover {
+    background-color: #218838;
+}
+
+.auth-page button[value="register"] {
+    background-color: #19b3f5;
+    color: white;
+}
+
+.auth-page button[value="register"]:hover {
+    background-color: #198bf5;
+}
+
+.auth-page .message {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.auth-page .message.success {
+    color: green;
+}
+
+.auth-page .message.error {
+    color: red;
+}
+
+.username-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    user-select: none;
+    color: #888;
+}
+
+.toggle-eye:hover {
+    color: #333;
+}
+
+/*  dashboard  */
+.dashboard-page {
+    background: #f4f4f4;
+}
+
+.header {
+    background: #343a40;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a {
+    color: #f9c846;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.dashboard-page .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-page h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.event {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #fafafa;
+}
+
+.event strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.event p {
+    margin: 0.2rem 0;
+}
+
+.event button {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1.2rem;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.event button:hover {
+    background: #218838;
+}
+
+.dashboard-page .message {
+    color: green;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header a {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+
+/* bookings page */
+.bookings-page {
+    background: #f4f4f4;
+}
+
+.bookings-page .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bookings-page h3 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.booking-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #fafafa;
+}
+
+.booking-item strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.booking-item p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.bookings-page .message {
+    color: #888;
+    font-style: italic;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.booking-item button {
+    margin-top: 0.7rem;
+    padding: 0.5rem 1.2rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.booking-item button:hover {
+    background: #c82333;
+}
+
+.pagination {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
